@@ -109,8 +109,8 @@ for asignacion in asignaciones_finales:
 # La lista 'insatisfacciones' contiene la insatisfacción de cada asignación en el mismo orden que 'asignaciones_finales'.
 
 
-minimo = min(insatisfacciones)
+minimo = max(insatisfacciones)
 index = insatisfacciones.index(minimo)
-final = asignaciones_finales[0]
+final = asignaciones_finales[index]
 
 print(final)
